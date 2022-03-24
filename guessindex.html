@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>guessing game</title>
+  <link rel="stylesheet" href="guess.css">
+</head>
+<body>
+  <header>
+    <p class="between">(between 1 & 20)</p>
+    <button class="btn-again"> Again</button>
+    <div class="number">?</div>
+  </header>
+  <main>
+    <section class="left">
+      <input type="number" class="guess"/>
+      <button class="btn-check">Check</button>
+    </section>
+    <section>
+      <p class="message">Start guessing...</p>
+      <p class="lable-score"> Score: <span class="score">20</span></p>
+      <p class="lable-highscore">HighScore: <span class="highscore">0</span></p>
+    </section>
+  </main>
+  <script src="guess.js"></script>
+</body>
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Wel-come to guessing game</h2>
+  <p>guess the correct number </p>
+  <input type="" class="select">
+  <button class="check">Check</button>
+  <div class="score"></div>
+  <div class=" highscore"></div>
+  <script>
+    const inputGuess=document.querySelector(".select")
+    const checkBtn=document.querySelector(".check")
+    const showScore = document.querySelector(".score")
+    const HighScore=document.querySelector(".highscore")
+
+
+    // check the opretion
+    function checkOperation(){
+      const inp1=Number(inputGuess.value)
+      if(inp1===10){
+        return('you win');
+      }else if(inp1>10){
+        return('number is graterthen guess number');
+      }else if (inp1<10){
+        return('number is lessthen gess number');   
+      }
+    }
+
+    function check(){
+      console.log('hello akshay');
+      checkOperation()
+    }
+
+
+
+
+
+
+    const checkValue=(input1)=>{
+      return input1===10
+    }
+    const check =()=>{
+
+      console.log(checkValue(10));
+    }
+    checkBtn.addEventListener("click",check)
+  </script>
+</body>
+</html>  -->
